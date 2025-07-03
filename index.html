@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body>
+    <h1>Rick and Morty - Personajes</h1>
+
+    <div class="controls">
+      <input
+        type="search"
+        class="search-input"
+        placeholder="Buscar personaje..."
+      />
+      <button id="btnFilter">Mostrar Filtros</button>
+    </div>
+
+    <div id="filters-container" class="hidden">
+      <div class="filter-group">
+        <label for="status-filter">Estado:</label>
+        <select id="status-filter">
+          <option value="">Todos</option>
+          <option value="alive">Vivo</option>
+          <option value="dead">Muerto</option>
+          <option value="unknown">Desconocido</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="species-filter">Especie:</label>
+        <select id="species-filter">
+          <option value="">Todas</option>
+          <option value="human">Humano</option>
+          <option value="alien">Alien</option>
+          <option value="humanoid">Humanoide</option>
+          <option value="poopybutthole">Poopybutthole</option>
+          <option value="mythological creature">Criatura Mitológica</option>
+          <option value="animal">Animal</option>
+          <option value="robot">Robot</option>
+          <option value="cronenberg">Cronenberg</option>
+          <option value="disease">Enfermedad</option>
+          <option value="unknown">Desconocido</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="gender-filter">Género:</label>
+        <select id="gender-filter">
+          <option value="">Todos</option>
+          <option value="female">Femenino</option>
+          <option value="male">Masculino</option>
+          <option value="genderless">Sin Género</option>
+          <option value="unknown">Desconocido</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="character-container"></div>
+
+    <div id="pagination-buttons">
+      <button id="first">Primera</button>
+      <button id="prev">Anterior</button>
+      <button id="next">Siguiente</button>
+      <button id="last">Última</button>
+    </div>
+
+    <script src="/src/App.js"></script>
+  </body>
+</html>
