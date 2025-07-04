@@ -98,7 +98,11 @@ function buildQueryParams() {
   const params = new URLSearchParams();
   const selectedStatus = statusFilter.value;
   const selectedSpecies = speciesFilter.value;
+  const selectedGender = genderFilter.value;
 
+  if (selectedGender) {
+    params.append("gender", selectedGender);
+  }
   if (selectedStatus) {
     params.append("status", selectedStatus);
   }
