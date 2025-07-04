@@ -84,7 +84,7 @@ function mostrarPersonajes(personajes) {
       <h2>${personaje.name}</h2>
       <p>Status: ${personaje.status}</p>
       <p>Especie: ${personaje.species}</p>
-     <a href="episodios.html?name=${encodeURIComponent(
+     <a href="/public/episodios.html?name=${encodeURIComponent(
        personaje.name
      )}" class="ver-episodios-btn">Ver Episodios</a>
     `;
